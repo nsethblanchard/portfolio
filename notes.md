@@ -15,3 +15,7 @@ going to manage.sanity.io will show you all of your projects
 8. run npm install @sanity/client
 9. from manage.sanity.io -click on the project, go to settings, go to API, then change the CORS to add localhost:3000 for your react side
 10. When you want to deploy and host, you have to remember to also add the host URL here as well
+
+<!-- Look at different tailwind customization installations to do more nuanced styling -->
+
+11. Add Tailwind URLs to index.css
