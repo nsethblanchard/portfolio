@@ -1,8 +1,8 @@
 import React from 'react'
 
-function Post() {
+function Posts() {
     return <h1>Post Page</h1>
 }
 
 
-export default Post;
+export default Posts;

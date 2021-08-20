@@ -4,7 +4,7 @@ import { SocialIcon } from 'react-social-icons';
 
 function NavBar() {
     return (
-       <header className="bg-green-600">
+       <header className="bg-green-600 h-20">
            <div className="container mx-auto flex justify-between">
                <nav className="flex">
                     <NavLink 
@@ -12,13 +12,13 @@ function NavBar() {
                         exact 
                         activeClassName="text-white-100"
                         // activeClassName is only used when user is on the linked page
-                        className="inline-flex items-center py-6 px-3 mr-4 text-blue-100 hover:text-green-800 text-4xl font-bold cursive tracking-wide"
+                        className="items-center py-6 px-3 mr-4 text-blue-100 hover:text-green-800 text-3xl font-bold cursive tracking-wide"
                     >
                         Seth
                     </NavLink>
 
                     <NavLink 
-                        to='/post' 
+                        to='/posts' 
                         activeClassName="text-white-100 bg-green-700"
                         className='inline-flex items-center py-3 px-3 my-6 rounded text-blue-200 hover:text-green-800'
                     >
@@ -26,7 +26,7 @@ function NavBar() {
                     </NavLink >
                     
                     <NavLink 
-                        to='/project' 
+                        to='/projects' 
                         activeClassName="text-white-100 bg-green-700"
                         className='inline-flex items-center py-3 px-3 my-6 rounded text-blue-200 hover:text-green-800'
                     >
@@ -43,10 +43,10 @@ function NavBar() {
                </nav>
                
                {/* going to use package react-social-icons */}
-               <div>
-                    <SocialIcon url="" className="mr-4" target="_blank" fgColor="#fff" style={{ height: 35, width: 35 }}/>
-                    <SocialIcon url="" className="mr-4" target="_blank" fgColor="#fff" style={{ height: 35, width: 35 }}/>
-                    <SocialIcon url="" className="mr-4" target="_blank" fgColor="#fff" style={{ height: 35, width: 35 }}/>
+               <div className="inline-flex py-3 px-3 my-6">
+                    <SocialIcon url="https://github.com/nsethblanchard" className="mr-4" target="_blank" fgColor="#fff" style={{ height: 25, width: 25 }}/>
+                    <SocialIcon url="https://www.linkedin.com/in/seth-blanchard-2042ba89/" className="mr-4" target="_blank" fgColor="#fff" style={{ height: 25, width: 25 }}/>
+                    <SocialIcon url="https://twitter.com/nsethblanchard" className="mr-4" target="_blank" fgColor="#fff" style={{ height: 25, width: 25 }}/>
                </div>
            </div>
        </header> 
