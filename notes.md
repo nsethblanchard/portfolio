@@ -19,3 +19,5 @@ going to manage.sanity.io will show you all of your projects
 <!-- Look at different tailwind customization installations to do more nuanced styling -->
 
 11. Add Tailwind URLs to index.css
+
+<!-- Sanity will be using GROQ- (Graph-Relational Object Queries) is a declarative language designed to query collections of largely schema-less JSON documents. Its primary design goals are expressive filtering, joining of several documents into a single response, and shaping the response to fit the client application. -->
