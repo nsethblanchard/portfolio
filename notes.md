@@ -36,3 +36,5 @@ going to manage.sanity.io will show you all of your projects
 1. Add the new file with others in schemas directory
 2. Go to schema file, import new one and then add to lower list
 3. Build out that empty .js file with the specifics of your new item. (check project.js for example...)
+4. Test in sanity studio on 3333
+5. Add new .js file in components directory and build out
