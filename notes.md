@@ -21,3 +21,18 @@ going to manage.sanity.io will show you all of your projects
 11. Add Tailwind URLs to index.css
 
 <!-- Sanity will be using GROQ- (Graph-Relational Object Queries) is a declarative language designed to query collections of largely schema-less JSON documents. Its primary design goals are expressive filtering, joining of several documents into a single response, and shaping the response to fit the client application. -->
+
+### Removing from Sanity Studio
+
+1. studio/schemas folder...
+2. Locate the specific one to be deleted and delete file
+3. go to schema.js---scroll down to "types: schemaTypes.concat.."
+4. remove mention of item from list and the import of that item near the top
+5. If mentioned in other relationships ie..category was used in post..., go remove that relationship...
+<!-- I commented out category to have an example of that relationship for future use -->
+
+### Adding new to Sanity Studio
+
+1. Add the new file with others in schemas directory
+2. Go to schema file, import new one and then add to lower list
+3. Build out that empty .js file with the specifics of your new item. (check project.js for example...)
