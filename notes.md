@@ -38,3 +38,7 @@ going to manage.sanity.io will show you all of your projects
 3. Build out that empty .js file with the specifics of your new item. (check project.js for example...)
 4. Test in sanity studio on 3333
 5. Add new .js file in components directory and build out
+
+### For SinglePost Block edits (body)
+
+1. You are making these changes in the studio...
