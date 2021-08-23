@@ -36,10 +36,20 @@ function Projects() {
                                 {project.title}
                             </a>
                         </h3>
-                        <div>
-                            <span></span>
-                            <span></span>
-                            <span></span>
+                        <div className='text-gray-500 text-xs space-x-4'>
+                            <span>
+                                {/* quickest way to use JS to add data without an extra package */}
+                                <strong className='font-bold'>Finished on</strong>:{' '}
+                                {new Date(project.date).toLocaleDateString()}
+                            </span>
+                            <span>
+                                <strong classname='font-bold'>Company</strong>:{' '}
+                                {project.place}
+                            </span>
+                            <span>
+                                <strong classname='font-bold'>Type</strong>:{' '}
+                                {project.projectType}
+                            </span>
                             <p></p>
                             <span></span>
                         </div>
