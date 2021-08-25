@@ -14,7 +14,7 @@ function NavBar() {
                         // activeClassName is only used when user is on the linked page
                         className="items-center py-6 px-3 mr-4 text-blue-100 hover:text-green-800 text-3xl font-bold cursive tracking-wide"
                     >
-                        Seth
+                        Seth Blanchard
                     </NavLink>
 
                     <NavLink 
