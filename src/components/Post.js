@@ -25,7 +25,7 @@ export default function Post() {
   }, []);
 
   return (
-    <main className="bg-gray-300 min-h-screen p-12">
+    <main className="bg-gray-300 min-h-screen p-8">
       <section className="container mx-auto">
         <h1 className="text-5xl flex justify-center cursive">
           Blogs are Life

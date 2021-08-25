@@ -46,7 +46,7 @@ export default function About() {
               Hey there. I'm{" "}
               <span className="text-green-50">{author.name}</span>
             </h1>
-            <p className="text-green-200 text-lg mx-auto">{author.bio}</p>
+            <p className="text-green-300 text-lg">{author.bio}</p>
           </div>
         </section>
       </div>

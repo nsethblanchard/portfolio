@@ -37,17 +37,17 @@ export default {
             name: 'link',
             type: 'url',
         },
-        // {
-        //     name: 'tags',
-        //     type: 'array',
-        //     of: [
-        //         {
-        //             type: 'string',
-        //         }
-        //     ],
-        //     options: {
-        //         layout: 'tags',
-        //     },
-        // }
+        {
+            name: 'tags',
+            type: 'array',
+            of: [
+                {
+                    type: 'string',
+                }
+            ],
+            options: {
+                layout: 'tags',
+            },
+        }
     ]
 }
