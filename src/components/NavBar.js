@@ -18,27 +18,28 @@ function NavBar() {
                     </NavLink>
 
                     <NavLink 
-                        to='/posts' 
-                        activeClassName="text-white-100 bg-gray-700"
-                        className='inline-flex items-center py-2 px-2 my-6 rounded text-blue-200 hover-nav'
-                    >
-                        Blog Posts
-                    </NavLink >
-                    
-                    <NavLink 
                         to='/projects' 
                         activeClassName="text-white-100 bg-gray-700"
                         className='inline-flex items-center py-3 px-3 my-6 rounded text-blue-200 hover-nav'
                     >
-                        Projects
+                         Projects
                     </NavLink>
+
+                    <NavLink 
+                        to='/activities' 
+                        activeClassName="text-white-100 bg-gray-700"
+                        className='inline-flex items-center py-2 px-2 my-6 rounded text-blue-200 hover-nav'
+                    >
+                        Extra-curricular
+                    </NavLink >
+                    
 
                     <NavLink 
                         to='/about' 
                         activeClassName="text-white-100 bg-gray-700"
                         className='inline-flex items-center py-3 px-3 my-6 rounded text-blue-200 hover-nav'
                     >
-                        About
+                        Bio
                     </NavLink>
                </nav>
                
