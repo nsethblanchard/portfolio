@@ -3,12 +3,12 @@ import { Link } from "react-router-dom";
 import sanityClient from "../client.js";
 
 export default function Post() {
-  const [postData, setPost] = useState(null);
+  const [eCAData, seteCA] = useState(null);
 
   useEffect(() => {
     sanityClient
       .fetch(
-        `*[_type == "post"]{
+        `*[_type == "ecActivities"]{
         title,
         slug,
         mainImage{
@@ -20,7 +20,7 @@ export default function Post() {
         }
       }`
       )
-      .then((data) => setPost(data))
+      .then((data) => seteCA(data))
       .catch(console.error);
   }, []);
 
@@ -34,22 +34,22 @@ export default function Post() {
           Fun things I do when I'm not coding
         </h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {postData &&
-            postData.map((post, index) => (
+          {eCAData &&
+            eCAData.map((eCA, index) => (
               <article>
-                <Link to={"/post/" + post.slug.current} key={post.slug.current}>
+                <Link to={"/activities/" + eCA.slug.current} key={eCA.slug.current}>
                   <span
                     className="block h-64 relative rounded shadow leading-snug bg-white border-l-8 border-green-400"
                     key={index}
                   >
                     <img
-                      src={post.mainImage.asset.url}
-                      alt={post.mainImage.alt}
+                      src={eCA.mainImage.asset.url}
+                      alt={eCA.mainImage.alt}
                       className="w-full h-full rounded-r object-cover absolute"
                     />
                     <span className="block relative h-full flex justify-end items-end pr-4 pb-4">
                       <h3 className="text-gray-800 text-lg font-bold px-3 py-4 bg-green-800 text-red-100 bg-opacity-75 rounded">
-                        {post.title}
+                        {eCA.title}
                       </h3>
                     </span>
                   </span>
