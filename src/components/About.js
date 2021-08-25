@@ -34,7 +34,7 @@ export default function About() {
         className="absolute w-full"
       />
       <div className="p-10 lg:pt-48 container mx-auto relative">
-        <section className="bg-gray-700 rounded-lg shadow-2xl lg:flex p-20 opacity-70">
+        <section className="bg-gray-700 rounded-lg lg:flex p-10 opacity-60">
           
           <img
             src={urlFor(author.authorImage).url()}
@@ -42,11 +42,11 @@ export default function About() {
             alt="Seth"
           />
           <div className="text-lg flex flex-col justify-center">
-            <h1 className="cursive text-5xl text-green-300 mt-4 mb-4">
-              Hey there. I'm{" "}
-              <span className="text-green-50">{author.name}</span>
+            <h1 className="cursive text-4xl text-center text-blue-50 mt-4 mb-4">
+              Hey there! I'm Seth
+
             </h1>
-            <p className="text-green-300 text-lg">{author.bio}</p>
+            <p className="text-blue-200 text-lg">{author.bio}</p>
           </div>
         </section>
       </div>

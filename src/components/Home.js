@@ -6,7 +6,7 @@ function Home() {
        <main>
            <img src={image} alt="Hammocks and Mountain Views" className="absolute object-cover w-full h-full"/>
            <section className="relative flex justify-center min-h-screen pt-12 lg:pt-64 px-8">
-               <h1 className="text-5xl text-white font-bold leading-none"> My Amazing Portfolio</h1>
+               <h1 className="text-5xl text-white font-semibold leading-none"> My Amazing Portfolio</h1>
            </section>
        </main> 
     )
