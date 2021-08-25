@@ -27,28 +27,30 @@ function Projects() {
                     
                     {projectData && projectData.map((project, index) => (
                     
-                    <article  className='relative rounded-lg shadow-xl bg-white p-4'>
-                        <h3  className='text-gray-800 tex-3xl font-bold mb-2 hover:text-green-700'> 
+                    <article key={index} className='relative rounded-lg shadow-xl bg-white p-4'>
+                        <h3  className='text-gray-800 text-2xl font-bold mb-2 hover:text-green-500'> 
                             <a 
                                 href={project.link}
                                 alt={project.title}
                                 target="_blank"
-                                
                                 // this removes the referral option with HTTP header
                                 rel="noopener noreferrer"
                             >
                                 {project.title}
                             </a>
                         </h3>
+                        <strong className='font-bold text-xs'>Using: </strong>
+                        
+                        {project.tags.map((tag) => (
+                            <span className="text-xs font-bold text-green-500">{tag}{' '}</span>
+                        ))}
+
                         <div className='text-xs'>
-                            
-                            <p className="my-3 text-gray-700">{project.description}</p>
-                            
+                            <p className="mb-2 text-gray-700">{project.description}</p>
                             <span>
                                 <strong className='font-bold'>Completed For</strong>:{'  '}
                                 {project.projectType}
                             </span>
-                            
                             <span>
                                 {/* quickest way to use JS to add data without an extra package */}
                                 {'   '}<strong className='font-bold'>Finished on</strong>:{' '}
