@@ -4,7 +4,7 @@ import { SocialIcon } from 'react-social-icons';
 
 function NavBar() {
     return (
-       <header className="bg-green-600 h-20">
+       <header className="bg-gray-600 h-20">
            <div className="container mx-auto flex justify-between">
                <nav className="flex">
                     <NavLink 
@@ -12,7 +12,7 @@ function NavBar() {
                         exact 
                         activeClassName="text-white-100"
                         // activeClassName is only used when user is on the linked page
-                        className="items-center py-6 px-3 mr-4 text-blue-100 hover:text-green-800 text-3xl font-bold cursive tracking-wide"
+                        className="items-center py-6 px-3 mr-4 text-blue-100 hover-nav text-3xl font-bold cursive tracking-wide"
                     >
                         Seth Blanchard
                     </NavLink>
@@ -20,7 +20,7 @@ function NavBar() {
                     <NavLink 
                         to='/posts' 
                         activeClassName="text-white-100 bg-green-700"
-                        className='inline-flex items-center py-3 px-3 my-6 rounded text-blue-200 hover:text-green-800'
+                        className='inline-flex items-center py-3 px-3 my-6 rounded text-blue-200 hover-nav'
                     >
                         Blog Posts
                     </NavLink >
@@ -28,7 +28,7 @@ function NavBar() {
                     <NavLink 
                         to='/projects' 
                         activeClassName="text-white-100 bg-green-700"
-                        className='inline-flex items-center py-3 px-3 my-6 rounded text-blue-200 hover:text-green-800'
+                        className='inline-flex items-center py-3 px-3 my-6 rounded text-blue-200 hover-nav'
                     >
                         Projects
                     </NavLink>
@@ -36,9 +36,9 @@ function NavBar() {
                     <NavLink 
                         to='/about' 
                         activeClassName="text-white-100 bg-green-700"
-                        className='inline-flex items-center py-3 px-3 my-6 rounded text-blue-200 hover:text-green-800'
+                        className='inline-flex items-center py-3 px-3 my-6 rounded text-blue-200 hover-nav'
                     >
-                        About Me!
+                        About
                     </NavLink>
                </nav>
                
