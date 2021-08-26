@@ -3,6 +3,7 @@ export default {
   title: 'ecActivities',
   type: 'document',
   fields: [
+    
     {
       name: 'title',
       title: 'Title',
@@ -31,6 +32,12 @@ export default {
         hotspot: true,
       },
     },
+    {
+      name: 'imagesGallery',
+      title: 'Images gallery',
+      type: 'array',
+      of: [{ type: 'image' }]
+     },
     {
       name: 'publishedAt',
       title: 'Published at',

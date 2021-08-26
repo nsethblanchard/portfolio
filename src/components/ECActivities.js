@@ -17,7 +17,12 @@ export default function Post() {
             url
           },
           alt
-        }
+        },
+        imagesGallery[]{
+          asset->{
+            url
+          }
+        },
       }`
       )
       .then((data) => seteCA(data))
@@ -39,7 +44,7 @@ export default function Post() {
               <article>
                 <Link to={"/activities/" + eCA.slug.current} key={eCA.slug.current}>
                   <span
-                    className="block h-64 relative rounded shadow leading-snug bg-white border-l-8 border-green-400"
+                    className="block h-64 relative rounded shadow leading-snug bg-white"
                     key={index}
                   >
                     <img
@@ -48,7 +53,7 @@ export default function Post() {
                       className="w-full h-full rounded-r object-cover absolute"
                     />
                     <span className="block relative h-full flex justify-end items-end pr-4 pb-4">
-                      <h3 className="text-gray-800 text-lg font-bold px-3 py-4 bg-green-800 text-red-100 bg-opacity-75 rounded">
+                      <h3 className="text-lg font-bold px-3 py-4 bg-green-800 text-blue-100 bg-opacity-75 rounded">
                         {eCA.title}
                       </h3>
                     </span>
