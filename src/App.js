@@ -5,6 +5,7 @@ import SingleActivity from './components/SingleActivity'
 import ECActivities from './components/ECActivities'
 import Projects from './components/Projects'
 import NavBar from './components/NavBar'
+import Resume from './components/Resume'
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route component={Home} exact path="/"/> 
         <Route component={About} path="/about"/> 
         <Route component={SingleActivity} path="/activities/:slug"/> 
+        <Route component={Resume} path="/resume"/> 
         <Route component={ECActivities} path="/activities"/> 
         <Route component={Projects} path="/projects"/> 
       </Switch>

@@ -33,6 +33,13 @@ function NavBar() {
                         Extra-curricular
                     </NavLink >
                     
+                    <NavLink 
+                        to='/resume' 
+                        activeClassName="text-white-100 bg-gray-700"
+                        className='inline-flex items-center py-2 px-2 my-6 rounded text-blue-200 hover-nav'
+                    >
+                        Resume
+                    </NavLink >
 
                     <NavLink 
                         to='/about' 
