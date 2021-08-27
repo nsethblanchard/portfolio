@@ -1,3 +1,5 @@
+All background images that I didn't take were gotten from pixabay.com
+
 Using Sanity.io- an open source SPA built with React.
 going to manage.sanity.io will show you all of your projects
 
