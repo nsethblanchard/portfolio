@@ -29,8 +29,8 @@ function Projects() {
                     
                     {projectData && projectData.map((project, index) => (
                     
-                    <article key={index} className='m-7 relative rounded-lg shadow-xl bg-white opacity-80 p-4'>
-                        <h3  className='text-gray-800 text-2xl font-bold mb-2 hover:text-green-500'> 
+                    <article key={index} className='m-7 relative rounded-lg bg-white opacity-80 p-4'>
+                        <h3  className='text-gray-800 text-3xl font-bold mb-2 hover:text-green-500'> 
                             <a 
                                 href={project.link}
                                 alt={project.title}
@@ -41,10 +41,10 @@ function Projects() {
                                 {project.title}
                             </a>
                         </h3>
-                        <strong className='font-bold text-xs'>Using: </strong>
+                        <strong className='font-bold'>Languages/Frameworks: </strong>
                         
                         {project.tags.map((tag) => (
-                            <span className="text-xs font-bold text-green-500">{tag}{' '}</span>
+                            <span className="font-bold">{tag}{' '}</span>
                         ))}
 
                         <div className='text-xs'>
