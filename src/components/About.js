@@ -20,9 +20,12 @@ export default function About() {
         "authorImage": image.asset->url
       }`
       )
+      
       .then((data) => setAuthor(data[0]))
       .catch(console.error);
   }, []);
+
+  
 
   if (!author) return <div>Loading...</div>;
 
@@ -45,8 +48,7 @@ export default function About() {
             <h1 className="cursive text-4xl text-center text-blue-50 mt-4 mb-4">
               Hey there! I'm Seth
             </h1>
-            {console.log(author)}
-            <p className="text-blue-200 text-lg">{author.bio}</p>
+            <p className="text-blue-200 text-lg lg:pl-3">{author.bio}</p>
           </div>
         </section>
       </div>
