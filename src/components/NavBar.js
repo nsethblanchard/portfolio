@@ -25,13 +25,6 @@ function NavBar() {
                          Projects
                     </NavLink>
 
-                    <NavLink 
-                        to='/activities' 
-                        activeClassName="text-white-100 bg-gray-700"
-                        className='text-2xl inline-flex items-center py-2 px-2 my-6 rounded text-blue-200 hover-nav'
-                    >
-                        Extra-curricular
-                    </NavLink >
                     
                     <NavLink 
                         to='/resume' 
@@ -48,6 +41,16 @@ function NavBar() {
                     >
                         Bio
                     </NavLink>
+
+                    <NavLink 
+                        to='/activities' 
+                        activeClassName="text-white-100 bg-gray-700"
+                        className='text-2xl inline-flex items-center py-2 px-2 my-6 rounded text-blue-200 hover-nav'
+                    >
+                        Extra-curricular Activities
+                    </NavLink >
+
+                    
                </nav>
                
                {/* going to use package react-social-icons */}

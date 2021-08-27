@@ -30,7 +30,7 @@ function Projects() {
                     {projectData && projectData.map((project, index) => (
                     
                     <article key={index} className='m-7 relative rounded-lg bg-white opacity-80 p-4'>
-                        <h3  className='text-gray-800 text-3xl font-bold mb-2 hover:text-green-500'> 
+                        <h3  className='text-gray-800 text-3xl font-bold mb-2 hover:text-purple-600'> 
                             <a 
                                 href={project.link}
                                 alt={project.title}
@@ -47,7 +47,7 @@ function Projects() {
                             <span className="font-bold">{tag}{' '}</span>
                         ))}
 
-                        <div className='text-xs'>
+                        <div className='pt-3'>
                             <p className="mb-2 text-gray-700">{project.description}</p>
                             <span>
                                 <strong className='font-bold'>Completed For</strong>:{'  '}
@@ -62,9 +62,9 @@ function Projects() {
                                 <a href={project.link} 
                                     rel="noopener noreferrer" 
                                     target="_blank" 
-                                    className="text-green-500 font-bold hover:underline hover:text-green-400"
+                                    className="text-purple-800 text-xl font-bold hover:underline hover:text-purple-500"
                                 >
-                                    View The Project
+                                    GitHub
                                 </a>
                             </div>
                         </div>

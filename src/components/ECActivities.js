@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import sanityClient from "../client.js";
+import photo from '../beach.jpg'
 
 export default function Post() {
   const [eCAData, seteCA] = useState(null);
@@ -30,15 +31,17 @@ export default function Post() {
   }, []);
 
   return (
-    <main className="bg-gray-300 min-h-screen p-8">
-      <section className="container mx-auto">
-        <h1 className="text-5xl flex justify-center cursive">
+    <main>
+      <img src={photo} alt="background picture" className="absolute w-full"/>
+      
+      <section className="container mx-auto relative">
+        <h1 className="pt-8 text-5xl text-gray-600 flex justify-center cursive">
           Personal Interests
         </h1>
         <h2 className="text-lg text-gray-600 flex justify-center mb-12 pt-2.5">
           Fun things I do when I'm not coding
         </h2>
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="m-7 grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {eCAData &&
             eCAData.map((eCA, index) => (
               <article>
