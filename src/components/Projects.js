@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import sanityClient from '../client.js'
+import photo from '../milky-way.jpg'
 
 function Projects() {
     const [projectData, setProjectData] = useState(null);
@@ -19,15 +20,16 @@ function Projects() {
     }, []);
 
     return (
-        <main className="bg-gray-300 min-h-screen p-8">
-            <section className="container mx-auto">
-                <h1 className="text-5xl flex justify-center cursive">Current Project Builds</h1>
-                <h2 className="text-lg text-gray-600 flex justify-center mb-12 mt-2">Thanks for looking</h2>
+        <main>
+            <img src={photo} alt="background picture" className="absolute w-full"/>
+            
+            <section className="container mx-auto relative">
+                <h1 className="p-8 text-5xl flex text-gray-200 justify-center cursive">Current Project Builds</h1>               
                 <section className='grid grid-cols-2 gap-8'>
                     
                     {projectData && projectData.map((project, index) => (
                     
-                    <article key={index} className='relative rounded-lg shadow-xl bg-white p-4'>
+                    <article key={index} className='m-7 relative rounded-lg shadow-xl bg-white opacity-80 p-4'>
                         <h3  className='text-gray-800 text-2xl font-bold mb-2 hover:text-green-500'> 
                             <a 
                                 href={project.link}

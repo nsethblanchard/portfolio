@@ -34,7 +34,6 @@ export default function About() {
         src={photo}
         alt="background picture"
         className="absolute w-full"
-        // className="absolute w-full"
       />
       <div className="p-10 lg:pt-24 container mx-auto relative">
         <section className=" mt-0 bg-gray-700 rounded-lg lg:flex p-6 opacity-70">
