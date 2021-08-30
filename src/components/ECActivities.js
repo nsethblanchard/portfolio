@@ -19,11 +19,6 @@ export default function Post() {
           },
           alt
         },
-        imagesGallery[]{
-          asset->{
-            url
-          }
-        },
       }`
       )
       .then((data) => seteCA(data))

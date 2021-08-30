@@ -26,6 +26,11 @@ export default function SinglePost() {
               url
             }
           },
+          imagesGallery[]{
+            asset->{
+              url
+            }
+          },
           body,
           "name": author->name,
           "authorImage": author->image
@@ -36,10 +41,11 @@ export default function SinglePost() {
   }, [slug]);
 
   if (!singlePost) return <div>Loading...</div>;
-
+ 
+  console.log(singlePost.imagesGallery)
   return (
     <main className="bg-gray-200 min-h-screen p-12">
-      <article className="container shadow-lg mx-auto bg-green-100 rounded-lg">
+      <article className="container shadow-lg mx-auto rounded-lg">
         <header className="relative">
           <div className="absolute h-full w-full flex items-center justify-center p-8">
             <div className="bg-white bg-opacity-75 rounded p-12">
@@ -74,6 +80,15 @@ export default function SinglePost() {
             dataset="production"
           />
         </div>
+        <section className="grid grid-cols-4 gap-5">
+        {singlePost.imagesGallery.map((pic) => (
+            <img
+              src={urlFor(pic).url()}
+              alt='cob oven picture'
+              className="rounded-2xl"
+            />
+        ))}
+      </section>  
       </article>
     </main>
   );
