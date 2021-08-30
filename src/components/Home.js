@@ -16,47 +16,46 @@ function Home() {
            <img src={image} alt="Hammocks and Mountain Views" className="absolute object-cover w-full h-full"/>
            <img src={profileImage} alt="My ugly mug" className="relative transform scale-50 face rounded-full opacity-90"/>
            
-
            <section className="relative px-60 -mt-36 pb-20 justify-center grid grid-cols-8 gap-3">
                 <img
                     src={html}
                     alt='html'
-                    className="proglogos"
+                    className="proglogos bg-gray-400 opacity-80 rounded-2xl"
                 />
                 <img
                     src={ruby}
                     alt='ruby'
-                    className="proglogos"
+                    className="proglogos bg-gray-400 opacity-80 rounded-2xl"
                 />
                 <img
                     src={rails}
                     alt='rails'
-                    className="rounded-2xl proglogos"
+                    className="rounded-2xl proglogos bg-gray-400 opacity-80"
                 />
                 <img
                     src={js}
                     alt='javascript'
-                    className="rounded-2xl proglogos"
+                    className="rounded-2xl proglogos bg-gray-400 opacity-80"
                 />
                 <img
                     src={reactRedux}
                     alt='react and redux'
-                    className="rounded-2xl proglogos"
+                    className="rounded-2xl proglogos bg-gray-400 opacity-80"
                 />
                 <img
                     src={css}
                     alt='css'
-                    className="rounded-2xl proglogos"
-                />
-                <img
-                    src={sqlite}
-                    alt='sqlite'
-                    className="rounded-2xl "
+                    className="rounded-2xl proglogos bg-gray-400 opacity-80"
                 />
                 <img
                     src={vscode}
                     alt='vscode'
-                    className="rounded-2xl proglogos"
+                    className="rounded-2xl proglogos bg-gray-400 opacity-80"
+                />
+                <img
+                    src={sqlite}
+                    alt='sqlite'
+                    className="rounded-2xl bg-gray-400 opacity-80"
                 />
 
            </section>
