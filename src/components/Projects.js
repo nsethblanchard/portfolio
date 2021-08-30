@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import sanityClient from '../client.js'
-import photo from '../milky-way.jpg'
+import photo from '../pics/milky-way.jpg'
 
 function Projects() {
     const [projectData, setProjectData] = useState(null);

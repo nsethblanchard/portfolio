@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import sanityClient from "../client.js";
-import photo from "../saxon.jpg";
+import photo from "../pics/saxon.jpg";
 import imageUrlBuilder from "@sanity/image-url";
 
 const builder = imageUrlBuilder(sanityClient);
