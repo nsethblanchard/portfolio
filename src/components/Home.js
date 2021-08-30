@@ -17,7 +17,7 @@ function Home() {
            <img src={profileImage} alt="My ugly mug" className="relative transform scale-50 face rounded-full opacity-90"/>
            
 
-           <section className="relative px-60 -mt-44 pb-10 justify-center grid grid-cols-8 gap-3">
+           <section className="relative px-60 -mt-36 pb-20 justify-center grid grid-cols-8 gap-3">
                 <img
                     src={html}
                     alt='html'
@@ -62,7 +62,7 @@ function Home() {
            </section>
 
             
-           <h2 className="relative mx-auto flex justify-center text-4xl text-gray-200 font-semibold">Seth Blanchard- Full Stack Developer</h2>
+           <h2 className="relative mx-auto flex justify-center text-5xl text-gray-200 font-semibold">Seth Blanchard- Full Stack Developer</h2>
            <h3 className="relative mt-3 mx-auto flex justify-center text-3xl text-gray-200 font-semibold">nsethblanchard@gmail.com</h3>
            
            

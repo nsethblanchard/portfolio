@@ -42,13 +42,13 @@ export default function Post() {
               <article>
                 <Link to={"/activities/" + eCA.slug.current} key={eCA.slug.current}>
                   <span
-                    className="block h-64 relative rounded shadow leading-snug bg-white"
+                    className="block h-64 relative rounded-2xl shadow leading-snug bg-white"
                     key={index}
                   >
                     <img
                       src={eCA.mainImage.asset.url}
                       alt={eCA.mainImage.alt}
-                      className="w-full h-full rounded-r object-cover absolute"
+                      className="w-full h-full rounded-2xl object-cover absolute"
                     />
                     <span className="block relative h-full flex justify-end items-end pr-4 pb-4">
                       <h3 className="text-lg font-bold px-3 py-4 bg-gray-800 text-blue-200 bg-opacity-75 rounded">
