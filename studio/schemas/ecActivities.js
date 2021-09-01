@@ -32,11 +32,18 @@ export default {
         hotspot: true,
       },
     },
+      {
+        name: 'secondaryImage',
+        title: 'Secondary image',
+        type: 'image',
+        options: {
+          hotspot: true,
+      },
+    },
     {
-      name: 'imagesGallery',
-      title: 'Images gallery',
-      type: 'array',
-      of: [{ type: 'image' }]
+      name: 'imagesUrl',
+      title: 'Images gallery URL',
+      type: 'url',
      },
     {
       name: 'publishedAt',

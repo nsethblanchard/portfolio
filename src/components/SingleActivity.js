@@ -26,11 +26,13 @@ export default function SinglePost() {
               url
             }
           },
-          imagesGallery[]{
+          secondaryImage{
             asset->{
-              url
-            }
-          },
+              _id,
+                url
+              }
+            },
+          imagesUrl,
           body,
           "name": author->name,
           "authorImage": author->image
@@ -42,7 +44,7 @@ export default function SinglePost() {
 
   if (!singlePost) return <div>Loading...</div>;
  
-  console.log(singlePost.imagesGallery)
+  console.log(singlePost)
   return (
     <main className="bg-gray-200 min-h-screen p-12">
       <article className="container shadow-lg mx-auto rounded-lg">
@@ -80,15 +82,7 @@ export default function SinglePost() {
             dataset="production"
           />
         </div>
-        <section className="grid grid-cols-4 gap-5">
-        {singlePost.imagesGallery.map((pic) => (
-            <img
-              src={urlFor(pic).url()}
-              alt='cob oven picture'
-              className="rounded-2xl"
-            />
-        ))}
-      </section>  
+          
       </article>
     </main>
   );
