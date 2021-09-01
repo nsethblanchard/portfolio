@@ -36,10 +36,10 @@ export default function Post() {
         <h2 className="text-lg text-gray-700 flex justify-center mb-12 pt-2.5">
           Fun things I do when I'm not coding
         </h2>
-        <div className="m-7 grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="m-7 grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {eCAData &&
             eCAData.map((eCA, index) => (
-              <article>
+              <article key={index}>
                 <Link to={"/activities/" + eCA.slug.current} key={eCA.slug.current}>
                   <span
                     className="block h-64 relative rounded-2xl shadow leading-snug bg-white"
