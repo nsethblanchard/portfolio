@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from "react";
-import sanityClient from "../client.js";
+// import React, { useState, useEffect } from "react";
+// import sanityClient from "../client.js";
 import photo from "../pics/saxon.jpg";
 // import imageUrlBuilder from "@sanity/image-url";
 
@@ -52,14 +52,14 @@ export default function About() {
               Before making a career change to software development, 
               I was a social worker, assisting low-income families to overcome barriers and locate employment. 
               While the work was rewarding, I knew that some of the services offered to these clients were not adequate or cost effective. 
-              I quit and founded <a target="_blank" className="text-blue-400 font-bold" href='http://www.benchmark-employment.com/'>Benchmark Employment Services & Training (BEST, LLC)</a>, 
+              I quit and founded <a target="_blank" rel="noreferrer" className="text-blue-400 font-bold" href='http://www.benchmark-employment.com/'>Benchmark Employment Services & Training (BEST, LLC)</a>, 
               which focuses on providing support for these same families in a more efficient and direct manner. 
               I have focused on business growth/sustainability, maintaining business relationships, 
               networking, billing practices for large governmental agencies, data security, 
               and accurate record keeping for compliance. 
             </p>
             <p className="text-blue-100 text-lg text-2xl lg:pl-3 mt-5">
-              Needing a creative outlet to offset social work, I co-founded <a target="_blank" className="text-blue-400 font-bold" href='http://www.skylarkhammocks.com/'>Skylark Hammocks</a> with a friend. 
+              Needing a creative outlet to offset social work, I co-founded <a target="_blank" rel="noreferrer" className="text-blue-400 font-bold" href='http://www.skylarkhammocks.com/'>Skylark Hammocks</a> with a friend. 
               During my time with Skylark, I have learned how to develop supply chains, 
               work with overseas partners for materials, implement efficient production measures, 
               as well as produce and market hammocks. I also update and maintain the company website.

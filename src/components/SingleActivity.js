@@ -84,7 +84,7 @@ export default function SinglePost() {
           />
         </div>
         <h2 className="text-2xl text-blue-600 text-center pb-3">Click Below for More Pictures</h2>
-        <a href={singlePost.imagesUrl} target="_blank"><img src={singlePost.secondaryImage.asset.url} className="linkedphoto rounded-2xl" alt="flickr image gallery"/></a>
+        <a href={singlePost.imagesUrl} target="_blank" rel="noreferrer"><img src={singlePost.secondaryImage.asset.url} className="linkedphoto rounded-2xl" alt="flickr image gallery"/></a>
 
 
       </article>
