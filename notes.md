@@ -1,7 +1,8 @@
 All background images that I didn't take were gotten from pixabay.com
 
-Using Sanity.io- an open source SPA built with React.
-going to manage.sanity.io will show you all of your projects
+Using Sanity.io- an open source SPA built with React. Headless Content Management System
+going to manage.sanity.io will show you all of your projects Your GUI data can be accessed and manipulated at
+localhost:3333 after you cd into studio and run "sanity start"
 
 ### Steps for setting up Sanity
 
