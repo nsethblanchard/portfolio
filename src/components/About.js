@@ -1,32 +1,32 @@
 import React, { useState, useEffect } from "react";
 import sanityClient from "../client.js";
 import photo from "../pics/saxon.jpg";
-import imageUrlBuilder from "@sanity/image-url";
+// import imageUrlBuilder from "@sanity/image-url";
 
-const builder = imageUrlBuilder(sanityClient);
-function urlFor(source) {
-  return builder.image(source);
-}
+// const builder = imageUrlBuilder(sanityClient);
+// function urlFor(source) {
+//   return builder.image(source);
+// }
 
 export default function About() {
-  const [author, setAuthor] = useState(null);
+  // const [author, setAuthor] = useState(null);
 
-  useEffect(() => {
-    sanityClient
-      .fetch(
-        `*[_type == "author"]{
-        name, 
-        "authorImage": image.asset->url
-      }`
-      )
-      // .then((data) => console.log(data))
-      .then((data) => setAuthor(data[0]))
-      .catch(console.error);
-  }, []);
+  // useEffect(() => {
+  //   sanityClient
+  //     .fetch(
+  //       `*[_type == "author"]{
+  //       name, 
+  //       "authorImage": image.asset->url
+  //     }`
+  //     )
+  //     // .then((data) => console.log(data))
+  //     .then((data) => setAuthor(data[0]))
+  //     .catch(console.error);
+  // }, []);
 
   
 
-  if (!author) return <div>Loading...</div>;
+  // if (!author) return <div>Loading...</div>;
 
   return (
     <main className="relative">
@@ -72,11 +72,7 @@ export default function About() {
               I can be reached at (540) 849-8929 or nsethblanchard@gmail.com. 
               I look forward to hearing from you!
             </p>
-            <img
-            // src={urlFor(author.authorImage).url()}
-            // className="rounded mx-auto w-36 h-32 lg:w-64 lg:h-60"
-            // alt="Seth"
-            />
+            
 
             
           </div>
