@@ -61,7 +61,7 @@ function Home() {
            </section>
 
             
-           {/* <h2 className="relative mx-auto flex justify-center text-5xl text-green-200 font-semibold">Seth Blanchard- Full Stack Developer</h2> */}
+           <h2 className="relative mx-auto flex justify-center text-5xl text-gray-200 font-semibold">Seth Blanchard- Full Stack Developer</h2>
            <h3 className="relative mt-3 mx-auto flex justify-center text-3xl text-gray-200 font-semibold">nsethblanchard@gmail.com</h3>
            
            
