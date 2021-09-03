@@ -21,7 +21,7 @@ function Projects() {
 
     return (
         <main>
-            <img src={photo} alt="background picture" className="absolute w-full"/>
+            <img src={photo} alt="background picture" className="absolute w-full h-full"/>
             
             <section className="container mx-auto relative">
                 <h1 className="p-8 text-5xl flex text-gray-200 justify-center cursive">Current Project Builds</h1>               
