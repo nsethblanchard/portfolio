@@ -42,3 +42,11 @@
   max-width: 15%;
   margin: auto;
 }
+
+.projBackground {
+  background-image: url("./pics/milky-way.jpg");
+}
+
+.aboutBackground {
+  background-image: url("./pics/saxon.jpg");
+}

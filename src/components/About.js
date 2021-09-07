@@ -1,42 +1,18 @@
-// import React, { useState, useEffect } from "react";
-// import sanityClient from "../client.js";
-import photo from "../pics/saxon.jpg";
-// import imageUrlBuilder from "@sanity/image-url";
 
-// const builder = imageUrlBuilder(sanityClient);
-// function urlFor(source) {
-//   return builder.image(source);
-// }
+import photo from "../pics/saxon.jpg";
+
 
 export default function About() {
-  // const [author, setAuthor] = useState(null);
-
-  // useEffect(() => {
-  //   sanityClient
-  //     .fetch(
-  //       `*[_type == "author"]{
-  //       name, 
-  //       "authorImage": image.asset->url
-  //     }`
-  //     )
-  //     // .then((data) => console.log(data))
-  //     .then((data) => setAuthor(data[0]))
-  //     .catch(console.error);
-  // }, []);
-
-  
-
-  // if (!author) return <div>Loading...</div>;
 
   return (
-    <main className="relative">
-      <img
+    <main className="relative aboutBackground">
+      {/* <img
         src={photo}
         alt="background picture"
         className="absolute w-full"
-      />
-      <div className="p-10 lg:pt-24 container mx-auto relative">
-        <section className=" mt-0 bg-gray-700 rounded-lg lg:flex p-6 opacity-70">
+      /> */}
+      <div className="p-20 lg:pt-24 container mx-auto relative">
+        <section className=" mt-0 bg-gray-700 rounded-lg lg:flex p-6 opacity-80">
           
           <div className="text-lg flex flex-col justify-center">
             <h1 className="cursive text-4xl text-center text-blue-50 mt-4 mb-4">
