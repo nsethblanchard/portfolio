@@ -60,9 +60,9 @@ function Home() {
 
            </section>
 
-           <section className="relative justify-center mx-48 rounded-xl bg-gray-500 opacity-80">  
-                <h2 className="relative mx-auto flex text-5xl justify-center text-gray-100 font-semibold">Seth Blanchard- Full Stack Developer</h2>
-                <h3 className="relative mt-3 mx-auto flex text-3xl justify-center text-gray-100 font-semibold">nsethblanchard@gmail.com</h3>
+           <section className="relative justify-center md:mx-48 md:rounded-xl md:bg-gray-500 opacity-80">  
+                <h2 className="relative mx-auto flex md:text-5xl justify-center text-gray-100 font-semibold">Seth Blanchard- Full Stack Developer</h2>
+                <h3 className="relative mt-3 mx-auto flex md:text-3xl justify-center text-gray-100 font-semibold">nsethblanchard@gmail.com</h3>
            </section>
            
        </main> 
