@@ -16,7 +16,7 @@ function Home() {
            <img src={image} alt="Hammocks and Mountain Views" className="absolute object-cover w-full h-full"/>
            <img src={profileImage} alt="My ugly mug" className="relative transform scale-50 face rounded-full opacity-90"/>
            
-           <section className="relative px-60 -mt-36 pb-20 justify-center grid grid-cols-8 gap-3">
+           <section className="relative flex justify-center min-h-screen pt-12 lg:pt-64 px-8">
                 <img
                     src={html}
                     alt='html'
