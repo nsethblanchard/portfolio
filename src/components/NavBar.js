@@ -39,7 +39,7 @@ function NavBar() {
                         activeClassName="text-white-100 bg-gray-700"
                         className='text-2xl inline-flex items-center py-3 px-3 my-6 rounded text-blue-200 hover-nav'
                     >
-                        Bio
+                        About
                     </NavLink>
 
                     <NavLink 
@@ -47,7 +47,7 @@ function NavBar() {
                         activeClassName="text-white-100 bg-gray-700"
                         className='text-2xl inline-flex items-center py-2 px-2 my-6 rounded text-blue-200 hover-nav'
                     >
-                        Extra-curricular Activities
+                        Activities
                     </NavLink >
 
                     
