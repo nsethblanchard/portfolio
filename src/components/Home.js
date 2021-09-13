@@ -13,9 +13,9 @@ import myface from '../pics/myFace.png'
 
 function Home() {
     return (
-       <main className="pb-0">
+       <main>
            <img src={image} alt="Hammocks and Mountain Views" className="absolute object-cover w-full h-full"/>
-           {/* <img src={profileImage} alt="My ugly mug" className="relative transform scale-50 face rounded-full opacity-90"/> */}
+           
            <img src={myface} alt="My Face" className="relative pt-8 mx-auto opacity-90"/>
 
           

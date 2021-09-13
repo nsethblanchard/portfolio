@@ -12,8 +12,8 @@ function Resume() {
                 className="absolute object-cover w-full"
                
             />
-            <div className='bg-gray-400 pt-16 mx-80'>
-                <img className="object-fill shadow-xl opacity-90" src={resume} alt="Seth Blanchard's Resume"/>
+            <div className='justify-center'>
+                <img className="relative p-10 mx-auto opacity-90" src={resume} alt="Seth Blanchard's Resume"/>
             </div>
         </main>
     )
