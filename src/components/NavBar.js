@@ -6,14 +6,20 @@ function NavBar() {
   return (
     <div className="bg-gray-600 antialiased">
       <header className="flex justify-between bg-gray-700 px-4 py-3 text-white">
-        <button className="items-center py-2 text-blue-100 hover-nav text-3xl font-bold cursive tracking-wide">
+        <NavLink
+          to="/"
+          exact
+          activeClassName="text-white-100"
+          // activeClassName is only used when user is on the linked page
+          className="items-center py-6 px-3 mr-4 mt-2 text-blue-100 hover-nav text-3xl font-bold cursive tracking-wide"
+        >
           Seth Blanchard
-        </button>
+        </NavLink>
         <div className="flex">
           {/* hamburger icon */}
           <button>
             <svg
-              className="h-6 w-6 fill-current text-gray-500 hover:bg-gray-300"
+              className="h-6 w-6 fill-current text-gray-500 hover:bg-gray-300 md:mr-10"
               fill="#000000"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 30 30"
