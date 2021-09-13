@@ -63,9 +63,9 @@ function Home() {
 
            </section>
 
-           <section className="relative justify-center md:mx-72 md:rounded-xl md:bg-gray-600 opacity-80">  
-                <h2 className="relative mx-auto flex md:text-5xl justify-center text-blue-200 font-semibold">Seth Blanchard- Full Stack Developer</h2>
-                <h3 className="relative mt-3 mx-auto flex md:text-3xl justify-center text-blue-200 font-semibold">nsethblanchard@gmail.com</h3>
+           <section className="relative justify-center bg-gray-600 md:mx-72 md:rounded-xl opacity-80">  
+                <h2 className="relative mx-auto flex text-xl md:text-5xl justify-center text-blue-200 font-semibold">Seth Blanchard- Full Stack Developer</h2>
+                <h3 className="relative mx-auto flex text-xl md:text-3xl justify-center text-blue-200 font-semibold">nsethblanchard@gmail.com</h3>
            </section>
            
        </main> 
