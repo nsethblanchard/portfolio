@@ -10,10 +10,10 @@ function Resume() {
                 src={photo}
                 alt="background picture"
                 className="absolute object-cover w-full"
-                // className="absolute w-full"
+               
             />
-            <div className='bg-gray-400 pt-16 pb-24 mx-80 lg:mx-96'>
-                <img className="object-fill shadow-2xl opacity-90" src={resume} alt="Seth Blanchard's Resume"/>
+            <div className='bg-gray-400 pt-16 mx-80'>
+                <img className="object-fill shadow-xl opacity-90" src={resume} alt="Seth Blanchard's Resume"/>
             </div>
         </main>
     )

@@ -74,7 +74,7 @@ export default function SinglePost() {
             style={{ height: "400px" }}
           />
         </header>
-        <div className="px-16 lg:px-48 text-center py-12 lg:py-20 prose lg:prose-xl max-w-full">
+        <div className="px-16 lg:px-48 text-center py-6 prose lg:prose-xl max-w-full">
           {/* the Block Content import allows for better styling of blocks of code, in this case the body of the post */}
           {/* it also puts together all of the singular pieces with the block and makes them into one monolith */}
           <BlockContent
@@ -83,8 +83,8 @@ export default function SinglePost() {
             dataset="production"
           />
         </div>
-        <h2 className="text-2xl text-blue-600 text-center pb-3">Click Below for More Pictures</h2>
-        <a href={singlePost.imagesUrl} target="_blank" rel="noreferrer"><img src={singlePost.secondaryImage.asset.url} className="linkedphoto rounded-2xl" alt="flickr image gallery"/></a>
+        <h2 className="text-2xl text-blue-600 text-center">Click Below for More Pictures</h2>
+        <a href={singlePost.imagesUrl} target="_blank" rel="noreferrer"><img src={singlePost.secondaryImage.asset.url} className="linkedphoto p-6 pb-10" alt="flickr image gallery"/></a>
 
 
       </article>

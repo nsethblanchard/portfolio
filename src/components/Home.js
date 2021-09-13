@@ -13,57 +13,57 @@ import vscode from '../logos/vscode.png'
 function Home() {
     return (
        <main>
-           <img src={image} alt="Hammocks and Mountain Views" className="absolute object-cover w-full h-full"/>
+           <img src={image} alt="Hammocks and Mountain Views" className="absolute object-cover w-screen h-screen"/>
            <img src={profileImage} alt="My ugly mug" className="relative transform scale-50 face rounded-full opacity-90"/>
            
-           <section className="relative px-60 -mt-36 pb-20 justify-center grid grid-cols-8 gap-3">
+           <section className="relative px-48 -mt-36 pb-12 justify-center grid grid-cols-8">
                 <img
                     src={html}
                     alt='html'
-                    className="proglogos bg-gray-400 opacity-80 rounded-2xl"
+                    className="proglogos p-1 border-solid border-2 bg-gray-500 opacity-90 rounded-xl"
                 />
                 <img
                     src={ruby}
                     alt='ruby'
-                    className="proglogos bg-gray-400 opacity-80 rounded-2xl"
+                    className="proglogos p-1 border-solid border-2 bg-gray-500 opacity-90 rounded-xl"
                 />
                 <img
                     src={rails}
                     alt='rails'
-                    className="rounded-2xl proglogos bg-gray-400 opacity-80"
+                    className="rounded-xl p-1 proglogos border-solid border-2 bg-gray-500 opacity-90"
                 />
                 <img
                     src={js}
                     alt='javascript'
-                    className="rounded-2xl proglogos bg-gray-400 opacity-80"
+                    className="rounded-xl p-1 proglogos border-solid border-2 bg-gray-500 opacity-90"
                 />
                 <img
                     src={reactRedux}
                     alt='react and redux'
-                    className="rounded-2xl proglogos bg-gray-400 opacity-80"
+                    className="rounded-xl p-1 proglogos border-solid border-2 bg-gray-500 opacity-90"
                 />
                 <img
                     src={css}
                     alt='css'
-                    className="rounded-2xl proglogos bg-gray-400 opacity-80"
+                    className="rounded-xl p-1 proglogos border-solid border-2 bg-gray-500 opacity-90"
                 />
                 <img
                     src={vscode}
                     alt='vscode'
-                    className="rounded-2xl proglogos bg-gray-400 opacity-80"
+                    className="rounded-xl p-1 proglogos border-solid border-2 bg-gray-500 opacity-90"
                 />
                 <img
                     src={sqlite}
                     alt='sqlite'
-                    className="rounded-2xl bg-gray-400 opacity-80"
+                    className="rounded-xl p-1 border-solid border-2 bg-gray-500 opacity-90"
                 />
 
            </section>
 
-            
-           <h2 className="relative mx-auto flex justify-center text-5xl text-gray-200 font-semibold">Seth Blanchard- Full Stack Developer</h2>
-           <h3 className="relative mt-3 mx-auto flex justify-center text-3xl text-gray-200 font-semibold">nsethblanchard@gmail.com</h3>
-           
+           <section className="relative justify-center md:mx-48 md:rounded-xl md:bg-gray-600 opacity-80">  
+                <h2 className="relative mx-auto flex md:text-5xl justify-center text-blue-200 font-semibold">Seth Blanchard- Full Stack Developer</h2>
+                <h3 className="relative mt-3 mx-auto flex md:text-3xl justify-center text-blue-200 font-semibold">nsethblanchard@gmail.com</h3>
+           </section>
            
        </main> 
     )

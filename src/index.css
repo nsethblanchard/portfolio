@@ -42,3 +42,20 @@
   max-width: 15%;
   margin: auto;
 }
+
+.homeBackground {
+  background-image: url("./pics/homePageHammock.jpg");
+  background-size: 100% 100%;
+}
+
+.projBackground {
+  background-image: url("./pics/milky-way.jpg");
+}
+
+.aboutBackground {
+  background: url("./pics/saxon.jpg");
+}
+
+.activitiesBackground {
+  background-image: url("./pics/nature.jpg");
+}
