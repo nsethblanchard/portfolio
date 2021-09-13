@@ -11,7 +11,7 @@ function NavBar() {
           exact
           activeClassName="text-white-100"
           // activeClassName is only used when user is on the linked page
-          className="items-center py-6 px-3 mr-4 mt-2 text-blue-100 hover-nav text-3xl font-bold cursive tracking-wide"
+          className="items-center py-6 px-3 mr-4 mt-2 text-blue-100 text-3xl font-bold cursive tracking-wide"
         >
           Seth Blanchard
         </NavLink>
@@ -19,7 +19,7 @@ function NavBar() {
           {/* hamburger icon */}
           <button>
             <svg
-              className="h-6 w-6 fill-current text-gray-500 hover:bg-gray-300 md:mr-10"
+              className="mt-3 h-8 w-8 fill-current text-gray-500 hover:text-gray-200 md:mr-10"
               fill="#000000"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 30 30"
