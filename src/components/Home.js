@@ -13,7 +13,7 @@ import vscode from '../logos/vscode.png'
 function Home() {
     return (
        <main>
-           <img src={image} alt="Hammocks and Mountain Views" className="absolute object-cover w-full h-full"/>
+           <img src={image} alt="Hammocks and Mountain Views" className="absolute object-cover w-screen h-screen"/>
            <img src={profileImage} alt="My ugly mug" className="relative transform scale-50 face rounded-full opacity-90"/>
            
            <section className="relative px-48 -mt-36 pb-12 justify-center grid grid-cols-8">
@@ -60,7 +60,7 @@ function Home() {
 
            </section>
 
-           <section className="relative justify-center md:mx-48 md:mt-10 md:rounded-xl md:bg-gray-600 opacity-80">  
+           <section className="relative justify-center md:mx-48 md:rounded-xl md:bg-gray-600 opacity-80">  
                 <h2 className="relative mx-auto flex md:text-5xl justify-center text-blue-200 font-semibold">Seth Blanchard- Full Stack Developer</h2>
                 <h3 className="relative mt-3 mx-auto flex md:text-3xl justify-center text-blue-200 font-semibold">nsethblanchard@gmail.com</h3>
            </section>
