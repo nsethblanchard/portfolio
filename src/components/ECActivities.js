@@ -26,17 +26,17 @@ export default function Post() {
   }, []);
 
   return (
-    <main>
-      <img src={photo} alt="background picture" className="absolute w-full"/>
+    <main className="bg-gray-600 mb-0 pb-0">
+      <img src={photo} alt="background picture" className="absolute w-full bg-gray-700"/>
       
       <section className="container mx-auto relative">
         <h1 className="pt-8 text-5xl text-gray-700 flex justify-center cursive">
           Personal Interests
         </h1>
-        <h2 className="text-lg text-gray-700 flex justify-center mb-12 pt-2.5">
+        <h2 className="text-lg text-gray-800 flex justify-center mb-12 pt-2.5">
           Fun things I do when I'm not coding
         </h2>
-        <div className="m-7 grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="mx-7 grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {eCAData &&
             eCAData.map((eCA, index) => (
               <article key={index}>
