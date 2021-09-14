@@ -1,9 +1,17 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import { SocialIcon } from "react-social-icons";
+import { useState } from "react/cjs/react.development";
 import Hamburger from "./Hamburger";
 
 function NavBar() {
+  
+  const [hamburgerOpen, setHamburgerOpen] = useState(false);
+
+  const toggleHamburger = () => {
+    setHamburgerOpen(!hamburgerOpen)
+  }
+  
   return (
     <header className="bg-gray-600 md:h-24">
       <div className="container mx-auto flex justify-between">
@@ -19,38 +27,38 @@ function NavBar() {
         </NavLink>
 
         <NavLink
-            to='/projects'
-            activeClassName="text-white-100 bg-gray-700"
-            className='hidden md:flex text-2xl inline-flex items-center py-3 px-3 my-6 rounded text-blue-200 hover-nav'
+          to='/projects'
+          activeClassName="text-white-100 bg-gray-700"
+          className='hidden md:flex text-2xl inline-flex items-center py-3 px-3 my-6 rounded text-blue-200 hover-nav'
         >
-            Projects
+          Projects
         </NavLink>
 
         <NavLink
-                      to='/resume'
-                      activeClassName="text-white-100 bg-gray-700"
-                      className='hidden md:flex text-2xl inline-flex items-center py-2 px-2 my-6 rounded text-blue-200 hover-nav'
-                  >
-                      Resume
-                  </NavLink >
+          to='/resume'
+          activeClassName="text-white-100 bg-gray-700"
+          className='hidden md:flex text-2xl inline-flex items-center py-2 px-2 my-6 rounded text-blue-200 hover-nav'
+        >
+          Resume
+        </NavLink >
 
-                  <NavLink
-                      to='/about'
-                      activeClassName="text-white-100 bg-gray-700"
-                      className='hidden md:flex text-2xl inline-flex items-center py-3 px-3 my-6 rounded text-blue-200 hover-nav'
-                  >
-                      About
-                  </NavLink>
+        <NavLink
+          to='/about'
+          activeClassName="text-white-100 bg-gray-700"
+          className='hidden md:flex text-2xl inline-flex items-center py-3 px-3 my-6 rounded text-blue-200 hover-nav'
+        >
+          About
+        </NavLink>
 
-                  <NavLink
-                      to='/activities'
-                      activeClassName="text-white-100 bg-gray-700"
-                      className='hidden md:flex text-2xl inline-flex items-center py-2 px-2 my-6 rounded text-blue-200 hover-nav'
-                  >
-                      Activities
-                  </NavLink >
+        <NavLink
+          to='/activities'
+          activeClassName="text-white-100 bg-gray-700"
+          className='hidden md:flex text-2xl inline-flex items-center py-2 px-2 my-6 rounded text-blue-200 hover-nav'
+        >
+          Activities
+        </NavLink >
         
-        <Hamburger/>
+        <Hamburger onClick={toggleHamburger}/>
 
         </nav>
         <div className="inline-flex pt-7 md:py-3 px-4 my-6">
