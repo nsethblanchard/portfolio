@@ -64,7 +64,7 @@ function NavBar() {
             to="/"
             exact
             activeClassName="text-white-100"
-            className="items-center py-6 px-3 mr-4 mt-2 md:mt-4 text-blue-100 hover-nav text-3xl font-bold cursive tracking-wide"
+            className="items-center py-6 md:px-3 mr-6 md:mr-4 mt-2 md:mt-4 text-blue-100 hover-nav text-3xl font-bold cursive tracking-wide"
           >
             Seth Blanchard
           </NavLink>
@@ -103,7 +103,7 @@ function NavBar() {
 
           <FontAwesomeIcon
             icon={faBars}
-            className="mt-10 text-2xl md:hidden text-gray-500"
+            className="mt-11 mr-4 text-2xl md:hidden text-gray-500"
             onClick={() => setShowMenu(!showMenu)}
           />
         </nav>
