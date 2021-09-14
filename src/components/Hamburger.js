@@ -1,13 +1,21 @@
 import React from 'react'
+import { useState } from "react";
 
 function Hamburger() {
+
+  const [hamburgerOpen, setHamburgerOpen] = useState(false);
+
+  const toggleHamburger = () => {
+    setHamburgerOpen(!hamburgerOpen)
+  }
+
     return (
         <div className="flex pt-2 md:hidden">
         {/* hamburger icon */}
         {/* {This is a change to force netlify} */}
         <button>
           <svg
-            className="h-8 w-8 mx-auto fill-current text-gray-500 hover:text-gray-200"
+            className="h-8 w-8 mx-auto fill-current text-gray-500"
             fill="#000000"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 30 30"
