@@ -25,7 +25,7 @@ function Projects() {
             
             <section className="container mx-auto relative">
                 <h1 className="p-4 md:p-8 text-4xl md:text-5xl flex text-gray-200 justify-center cursive">Current Project Builds</h1>               
-                <section className='px-5 grid md:grid-cols-2 gap-3 md:px-12'>
+                <section className='pl-5 pr-8 grid md:grid-cols-2 gap-3 md:px-12'>
                     
                     {projectData && projectData.map((project, index) => (
                     

@@ -13,7 +13,7 @@ function Resume() {
                
             />
             <div className='justify-center'>
-                <img className="relative pt-8 md:pt-12 pb-10 px-5 mx-auto opacity-90" src={resume} alt="Seth Blanchard's Resume"/>
+                <img className="relative pt-8 md:pt-12 pb-10 pl-5 pr-11 mx-auto opacity-90" src={resume} alt="Seth Blanchard's Resume"/>
             </div>
         </main>
     )
