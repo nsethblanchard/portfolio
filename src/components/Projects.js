@@ -24,12 +24,12 @@ function Projects() {
             {/* <img src={photo} alt="background picture" className="absolute h-full w-full"/> */}
             
             <section className="container mx-auto relative">
-                <h1 className="p-8 text-5xl flex text-gray-200 justify-center cursive">Current Project Builds</h1>               
-                <section className='grid md:grid-cols-2 gap-4 px-12'>
+                <h1 className="p-4 md:p-8 text-4xl md:text-5xl flex text-gray-200 justify-center cursive">Current Project Builds</h1>               
+                <section className='pl-5 pr-8 grid md:grid-cols-2 gap-3 md:px-12'>
                     
                     {projectData && projectData.map((project, index) => (
                     
-                    <article key={index} className='m-7 relative rounded-lg bg-white opacity-80 p-4'>
+                    <article key={index} className='md:m-7 relative rounded-lg bg-white opacity-80 p-4'>
                         <h3  className='text-gray-800 text-3xl font-bold mb-2 hover:text-purple-600'> 
                             <a 
                                 href={project.link}

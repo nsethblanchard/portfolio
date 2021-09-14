@@ -5,15 +5,15 @@ import photo from "../pics/buildings.jpg"
 
 function Resume() {
     return (
-        <main>
+        <main className="bg-gray-700">
             <img
                 src={photo}
                 alt="background picture"
-                className="absolute object-cover w-full"
+                className="absolute h-screen md:object-cover md:w-full md:h-auto bg-gray-700"
                
             />
-            <div className='bg-gray-400 pt-16 mx-80'>
-                <img className="object-fill shadow-xl opacity-90" src={resume} alt="Seth Blanchard's Resume"/>
+            <div className='justify-center'>
+                <img className="relative pt-8 md:pt-12 pb-10 pl-5 pr-11 mx-auto opacity-90" src={resume} alt="Seth Blanchard's Resume"/>
             </div>
         </main>
     )
