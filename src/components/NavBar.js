@@ -6,11 +6,11 @@ import Hamburger from "./Hamburger";
 
 function NavBar() {
   
-  // const [hamburgerOpen, setHamburgerOpen] = useState(false);
+  const [hamburgerOpen, setHamburgerOpen] = useState(false);
 
-  // const toggleHamburger = () => {
-  //   setHamburgerOpen(!hamburgerOpen)
-  // }
+  const toggleHamburger = () => {
+    setHamburgerOpen(!hamburgerOpen)
+  }
   
   return (
     <header className="bg-gray-600 md:h-24">
@@ -58,7 +58,7 @@ function NavBar() {
           Activities
         </NavLink >
         
-        {/* <Hamburger onClick={toggleHamburger}/> */}
+        <Hamburger onClick={toggleHamburger}/>
 
         </nav>
         <div className="inline-flex pt-7 md:py-3 px-4 my-6">
