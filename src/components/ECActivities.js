@@ -29,7 +29,7 @@ export default function Post() {
     <main className="bg-gray-600 mb-0 pb-0">
       <img src={photo} alt="background picture" className="absolute w-full bg-gray-700"/>
       
-      <section className="container mx-auto relative">
+      <section className="container mx-auto pl-5 pr-11 relative">
         <h1 className="pt-8 text-5xl text-gray-700 flex justify-center cursive">
           Personal Interests
         </h1>
