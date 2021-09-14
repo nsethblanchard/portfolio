@@ -4,6 +4,7 @@ function Hamburger() {
     return (
         <div className="flex pt-2 md:hidden">
         {/* hamburger icon */}
+        {/* {This is a change to force netlify} */}
         <button>
           <svg
             className="h-8 w-8 mx-auto fill-current text-gray-500 hover:text-gray-200"
