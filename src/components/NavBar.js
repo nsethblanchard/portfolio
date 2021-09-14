@@ -2,7 +2,6 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import { SocialIcon } from "react-social-icons";
 import { useState } from "react";
-// import Hamburger from "./Hamburger";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 
@@ -109,7 +108,7 @@ function NavBar() {
           />
         </nav>
 
-        <div className="mt-10 md:inline-flex md:pt-7 md:py-3 md:px-4 md:my-6">
+        <div className="mt-10 inline-flex md:pt-7 md:py-3 md:px-4 md:my-6">
           <SocialIcon
             url="https://github.com/nsethblanchard"
             className="mr-4"
