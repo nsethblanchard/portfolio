@@ -47,11 +47,11 @@ export default function SinglePost() {
  
   console.log(singlePost)
   return (
-    <main className="bg-gray-200 min-h-screen p-12">
+    <main className="bg-gray-200 min-h-screen p-4 md:p-12">
       <article className="container shadow-lg mx-auto rounded-lg">
         <header className="relative">
           <div className="absolute h-full w-full flex items-center justify-center p-8">
-            <div className="bg-white bg-opacity-75 rounded p-12">
+            <div className="bg-white bg-opacity-60 rounded p-12">
               <h1 className="cursive text-3xl lg:text-6xl mb-4">
                 {singlePost.title}
               </h1>
@@ -74,7 +74,7 @@ export default function SinglePost() {
             style={{ height: "400px" }}
           />
         </header>
-        <div className="px-16 lg:px-48 text-center py-6 prose lg:prose-xl max-w-full">
+        <div className="leading-tight md:leading-normal tracking-tighter md:tracking-normal px-2 md:px-16 lg:px-48 text-center py-2 md:py-6 prose lg:prose-xl max-w-full">
           {/* the Block Content import allows for better styling of blocks of code, in this case the body of the post */}
           {/* it also puts together all of the singular pieces with the block and makes them into one monolith */}
           <BlockContent
@@ -83,8 +83,8 @@ export default function SinglePost() {
             dataset="production"
           />
         </div>
-        <h2 className="text-2xl text-blue-600 text-center">Click Below for More Pictures</h2>
-        <a href={singlePost.imagesUrl} target="_blank" rel="noreferrer"><img src={singlePost.secondaryImage.asset.url} className="linkedphoto p-6 pb-10" alt="flickr image gallery"/></a>
+        <h2 className="leading-none md:leading-normal text-sm md:text-2xl text-blue-600 text-center">Click Below for More Pictures</h2>
+        <a href={singlePost.imagesUrl} target="_blank" rel="noreferrer"><img src={singlePost.secondaryImage.asset.url} className="linkedphoto p-2 md:p-6 md:pb-10" alt="flickr image gallery"/></a>
 
 
       </article>
